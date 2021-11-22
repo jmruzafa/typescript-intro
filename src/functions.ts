@@ -1,3 +1,28 @@
+//
+function lineupCard(team: string, ...players: string[]) {
+    console.log('Team: ' + team);
+    for (let player of players){
+        console.log(player);
+    }
+}
+lineupCard('Astros', 'A', 'B', 'C', 'D', 'E');
+
+
+
+// Optional and default arguments
+function printAddress(street: string, streetTwo?: string, state: string = 'AZ')
+{
+    console.log(street);
+    if(streetTwo)
+        console.log(streetTwo);
+    console.log(state);
+}
+
+printAddress('123th Street', '2 Vacation Street');
+printAddress('Single Street Address');
+printAddress('123th Street', '2 Vacation Street','UT');
+
+
 function printName(f, l){
     let greeting: string = "Hi there, ";
     console.log(greeting + f + " " + l);
