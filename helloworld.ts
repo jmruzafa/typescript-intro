@@ -1,9 +1,8 @@
-interface User {
-    name: string;
-    id: number;
+class HelloTypeScriptWorld {
+    greeting: string;
+    constructor() {
+        this.greeting = "Hello TypeScript World!";
+    }
 }
-
-const user: User = {
-    name: "Javier",
-    id: 1
-}
+var hello = new HelloTypeScriptWorld();
+console.log(hello.greeting);

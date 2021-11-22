@@ -1,4 +1,8 @@
-var user = {
-    name: "Javier",
-    id: 1
-};
+var HelloTypeScriptWorld = /** @class */ (function () {
+    function HelloTypeScriptWorld() {
+        this.greeting = "Hello TypeScript World!";
+    }
+    return HelloTypeScriptWorld;
+}());
+var hello = new HelloTypeScriptWorld();
+console.log(hello.greeting);
